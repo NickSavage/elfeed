@@ -358,6 +358,15 @@ It's rough and unfinished -- no keyboard shortcuts, read-only, no
 authentication, and a narrow entry viewer. This is basically Elfeed's
 "mobile" interface. Patches welcome.
 
+There is an [Elfeed Android
+interface](https://github.com/areina/elfeed-cljsrn) ([Google
+Play](https://play.google.com/store/apps/details?id=com.elfeedcljsrn))
+available. In order to use this, you will need to run the web
+interface with `M-x elfeed-web-start` and ensure that `httpd-host` is
+set to not only serve to localhost (such as `0.0.0.0`). The Android
+app does not currently support authentication, so you may want to
+consider only serving over your LAN.
+
 ## Platform Support
 
 Summary: Install cURL and most problems disappear for all platforms.
